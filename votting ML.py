@@ -18,7 +18,10 @@ data['target'] = iris.target
 
 
 print("First 5 rows of the dataset with target:")
-print(data.head())
+print(data.head(10))
+print(data.columns)
+print(data.shape)
+print(data.info())
 
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
 
